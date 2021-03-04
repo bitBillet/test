@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d1a0b984-d9b7-46e4-af64-efd9076277c9" name="webdev">
+        <fileTransfer rootFolder="/home/bitrix/ext_www/serbin.webdev.rarus-crimea.ru/" accessType="SFTP" host="194.226.180.77" port="22" sshConfigId="fab3c532-021e-48cf-82c5-7ad47f014b3e" sshConfig="tarale@194.226.180.77:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

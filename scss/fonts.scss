@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular.eot');
+  src: local('../fonts/Circe'), local('Circe-Regular'),
+  url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Circe-Regular.woff') format('woff'),
+  url('../fonts/Circe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-ExtraLight.eot');
+  src: local('../fonts/Circe ExtraLight'), local('Circe-ExtraLight'),
+  url('../fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('Circe-ExtraLight.woff') format('woff'),
+  url('Circe-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Thin.eot');
+  src: local('../fonts/Circe Thin'), local('Circe-Thin'),
+  url('../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Circe-Thin.woff') format('woff'),
+  url('../fonts/Circe-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Light.eot');
+  src: local('../fonts/Circe Light'), local('Circe-Light'),
+  url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Circe-Light.woff') format('woff'),
+  url('../fonts/Circe-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Bold.eot');
+  src: local('../fonts/Circe Bold'), local('Circe-Bold'),
+  url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Circe-Bold.woff') format('woff'),
+  url('../fonts/Circe-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-ExtraBold.eot');
+  src: local('../fonts/Circe ExtraBold'), local('Circe-ExtraBold'),
+  url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Circe-ExtraBold.woff') format('woff'),
+  url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('../fonts/ptsans.woff2') format('woff2'),
+  url('../fonts/ptsans.woff') format('woff'),
+  url('../fonts/ptsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Italic'), local('PTSans-Italic'),
+  url('../fonts/ptsansitalic.woff2') format('woff2'),
+  url('../fonts/ptsansitalic.woff') format('woff'),
+  url('../fonts/ptsansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+  url('../fonts/ptsansbold.woff2') format('woff2'),
+  url('../fonts/ptsansbold.woff') format('woff'),
+  url('../fonts/ptsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'),
+  url('../fonts/ptsansbolditalic.woff2') format('woff2'),
+  url('../fonts/ptsansbolditalic.woff') format('woff'),
+  url('../fonts/ptsansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}

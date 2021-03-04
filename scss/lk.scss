@@ -1,0 +1,226 @@
+.lk {
+  &__block {
+    margin-bottom: 30px;
+    border-radius: 2px;
+    overflow: hidden;
+
+    &--header {
+      position: relative;
+      padding: 16px 24px;
+      background: $blue-color;
+      color: $white-color;
+      justify-content: space-between;
+      align-items: center;
+
+      &:after {
+        content: '';
+        display: block;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border: 35px solid $light-blue-color;
+        position: absolute;
+        bottom: -25px;
+        right: 17%;
+        opacity: 0.4;
+      }
+    }
+
+    &--body {
+      background: $light-blue-color2;
+      padding: 32px 32px 10px 32px;
+    }
+
+    &--change {
+      height: 32px;
+      width: 32px;
+      flex-shrink: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/edit.svg");
+      cursor: pointer;
+    }
+  }
+
+  &__data {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .lk__data--text {
+        padding-bottom: 0;
+      }
+    }
+
+    &--label {
+      @extend %p2;
+      color: $dark-gray-color;
+      margin-bottom: 4px;
+      font-weight: bold;
+
+      &.red {
+        color: $red-color;
+      }
+    }
+
+    &--text {
+      height: 68px;
+      padding: 10px 0;
+      font-family: "Circe", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      color: $black-color;
+    }
+
+    .form-group {
+      width: 100%;
+      border: none;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .form-control {
+      width: 100%;
+      height: 50px;
+      background-color: $white-color;
+
+      &[disabled="disabled"], &[readonly] {
+        border: none;
+        background: $light-blue-color2;
+      }
+    }
+
+    .show-password {
+      display: block;
+      width: 22px;
+      height: 19px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 10px;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/show.svg");
+      cursor: pointer;
+    }
+  }
+
+  &__avatar {
+    height: 103px;
+    width: 103px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+
+  &__wrap {
+    align-items: flex-start;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__menu {
+    border: 1px solid $light-blue-color;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 20px 0;
+    width: 225px;
+    margin-right: 25px;
+    flex-shrink: 0;
+
+    &--link {
+      display: flex;
+      text-decoration: none;
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: $black-color;
+      height: 58px;
+      align-items: center;
+      padding: 8px 28px 8px 28px;
+      border-left: 4px solid transparent;
+      box-sizing: border-box;
+      transition: all 0.25s;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+        flex-shrink: 0;
+        display: block;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $red-color;
+      }
+
+      &.active {
+        color: $red-color;
+        border-color: $blue-color;
+        background-color: $light-blue-color2;
+      }
+    }
+  }
+
+  &__top {
+    padding-bottom: 18px;
+
+    .lk__avatar {
+      margin: auto;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: block;
+      width: 245px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.show-password {
+  display: block;
+  width: 22px;
+  height: 19px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  &[data-show="hide"] {
+    background-image: url("../img/show.svg");
+  }
+  &[data-show="show"] {
+    background-image: url("../img/eye.svg");
+  }
+}

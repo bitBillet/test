@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bussiness</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <a href="#modalSignIn" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalSignIn">Модальное окно входа
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#modalLogIn" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalLogIn">Модальное окно регистрации</a>
+                </div>
+
+                <div>
+                    <a href="#modalRecoveryPassword1" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRecoveryPassword1">Модальное окно востановление пароля step1</a>
+                </div>
+
+                <div>
+                    <a href="#modalRecoveryPassword2" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRecoveryPassword2">Модальное окно смена пароля step2</a>
+                </div>
+
+                <div>
+                    <a href="#modalRecoveryPasswordSuccess" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRecoveryPasswordSuccess">Модальное окно смена пароля успех</a>
+                </div>
+
+                <div>
+                    <a href="#modalRegisterSuccess" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRegisterSuccess">Модальное окно авторизация успех</a>
+                </div>
+
+                <div>
+                    <a href="#modalRegisterSuccess2" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRegisterSuccess2">Модальное окно регистрация успех</a>
+                </div>
+
+                <div>
+                    <a href="#modalSignInError" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalSignInError">Вход в личный кабинет ошибка</a>
+                </div>
+
+                <div>
+                    <a href="#modalRegisterError" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRegisterError">Регистрация ошибка</a>
+                </div>
+
+                <div>
+                    <a href="#modalRecoveryPasswordError" class="btn btn-red mb-4" data-toggle="modal"
+                       data-target="#modalRecoveryPasswordError">Восстановление пароля ошибка</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal fade bd-example-modal-lg modal-login" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalLogIn">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="d-flex modal__header--title">
+                        <div class="h2">Регистрация</div>
+                        <div class="d-flex modal__header--acc">У меня уже есть аккаунт —
+                            <a href="#modalSignIn" data-toggle="modal" data-target="#modalSignIn">войти</a>
+                        </div>
+                    </div>
+
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                           aria-controls="nav-home" aria-selected="true">Физ.лицо</a>
+                        <a class="" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                           aria-controls="nav-profile" aria-selected="false">ИП/ Юр.лицо</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                     aria-labelledby="nav-home-tab">
+                    <form class="needs-validation" name="form">
+                        <div class="modal__body">
+                            <div class="modal__container">
+
+                                <div class="d-flex modal__form--row">
+                                    <div class="modal__form--col">
+                                        <div class="form-group">
+                                            <label for="firstName">Фамилия*</label>
+                                            <input type="text" class="form-control onlyText" id="firstName"
+                                                   name="firstName" placeholder=" "
+                                                   required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="secondName">Имя*</label>
+                                            <input type="text" class="form-control onlyText" id="secondName" name="secondName" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="fatherName">Отчество</label>
+                                            <input type="text" class="form-control notrequired onlyText" name="fatherName"
+                                                   placeholder=" " id="fatherName">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal__form--col">
+                                        <div class="form-group">
+                                            <label for="email">Email*</label>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phone">Телефон*</label>
+                                            <input type="text" class="form-control floatNumber input-phone"
+                                                   id="phone" name="phone" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="password">Пароль*</label>
+                                            <input type="password" class="form-control" name="password" placeholder=" " id="password">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="modal__footer">
+                            <div class="modal__container">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Нажимая на кнопку, я принимаю условия <a href="#"> соглашения</a>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-big btn-red">Зарегестрироваться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <form class="needs-validation" name="">
+                        <div class="modal__body">
+                            <div class="modal__container">
+
+                                <div class="d-flex modal__form--row">
+                                    <div class="modal__form--col">
+                                        <div class="form-group">
+                                            <label for="firstName2">Фамилия*</label>
+                                            <input type="text" class="form-control onlyText" id="firstName2" placeholder=" "  required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="secondName2">Имя*</label>
+                                            <input type="text" class="form-control onlyText" id="secondName2" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="fatherName2">Отчество</label>
+                                            <input type="text" class="form-control notrequired onlyText"
+                                                   id="fatherName2" placeholder=" ">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="organization">Наименование организации*</label>
+                                            <input type="text" class="form-control" id="organization" placeholder=" " required>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal__form--col">
+                                        <div class="form-group">
+                                            <label for="email2">Email*</label>
+                                            <input type="email" class="form-control" id="email2" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phone2">Телефон*</label>
+                                            <input type="text" class="form-control floatNumber input-phone"
+                                                   id="phone2" placeholder=" " required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="password">Пароль*</label>
+                                            <input type="text" class="form-control" id="password2" placeholder=" "
+                                                   required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="INN">ИНН организации/ИП*</label>
+                                            <input type="text" class="form-control floatNumber" id="INN" placeholder=" " required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__footer">
+                            <div class="modal__container">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" required>
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Нажимая на кнопку, я принимаю условия <a href="#">соглашения</a>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-big btn-red">Зарегестрироваться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-signin" tabindex="-1" role="dialog"
+     aria-labelledby="modalSigIn" aria-hidden="true" id="modalSignIn">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="d-flex modal__header--title">
+                        <div class="h2">Вход в личный кабинет</div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="form-group">
+                            <label for="login3">E-mail или номер телефона*</label>
+                            <input type="email" class="form-control" id="login3" name="login" placeholder=" "
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password3">Пароль</label>
+                            <input type="password" class="form-control" id="password3" placeholder=" "
+                                   name="password" required>
+                        </div>
+
+                        <a href="#" class="link">Забыли пароль?</a>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <div class="modal__container">
+                        <button type="submit" class="btn btn-big btn-red">Войти</button>
+                        <div class="modal__footer--text">Еще нет аккаунта?
+                            <a href="#modalLogIn" data-toggle="modal" data-target="#modalLogIn">Зарегестрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-signin" tabindex="-1" role="dialog"
+     aria-labelledby="modalRecoveryPassword1" aria-hidden="true" id="modalRecoveryPassword1">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Восстановление пароля</div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="needs-validation" name="">
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="form-group">
+                            <label for="login">Введите ваш E-mail, указанный при регистрации: *</label>
+                            <input type="email" class="form-control" id="login" name="email" placeholder=" " required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <div class="modal__container">
+                        <button type="submit" class="btn btn-big btn-red">Отправить запрос</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-signin" tabindex="-1" role="dialog"
+     aria-labelledby="modalRecoveryPassword2" aria-hidden="true" id="modalRecoveryPassword2">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Смена пароля</div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="needs-validation">
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="form-group">
+                            <label for="code">Введите код из письма: *</label>
+                            <input type="text" class="form-control" id="code" placeholder=" " required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new-password">Новый пароль: *</label>
+                            <input type="password" class="form-control notrequired" id="new-password" placeholder=" "
+                                   required>
+                            <div class="show-password js-show-password" data-show="hide"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repeat-password">Повторите новый пароль: *</label>
+                            <input type="password" class="form-control notrequired" id="repeat-password"  placeholder=" " required>
+                            <div class="show-password js-show-password" data-show="hide"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <div class="modal__container">
+                        <button type="submit" class="btn btn-big btn-red">Сменить пароль</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalRecoveryPasswordSuccess" aria-hidden="true" id="modalRecoveryPasswordSuccess">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Смена пароля</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container">
+                    <div class="modal__success"><span class="icon icon-success"></span>Успешно!</div>
+                    <p>Вы изменили пароль входа в личный кабинет,<br>
+                        войдите на сайт с новым паролем</p>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="modal__container">
+                    <a href="#modalSignIn" class="btn btn-big btn-red" data-toggle="modal"
+                       data-target="#modalSignIn">Войти в личный кабинет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalRegisterSuccess" aria-hidden="true" id="modalRegisterSuccess">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Вход в личный кабинет</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container pt-4 pb-5">
+                    <div class="modal__success"><span class="icon icon-success"></span>Успех!</div>
+                    <!--<p>Вы изменили пароль входа в личный кабинет,<br>
+                        войдите на сайт с новым паролем</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalRegisterSuccess2" aria-hidden="true" id="modalRegisterSuccess2">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Регистрация</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container">
+                    <div class="modal__success"><span class="icon icon-success"></span>Успех!</div>
+                    <p>Для завершения регистрации подтвердите аккаунт по ссылке, направленной на ваш e-mail</p>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="modal__container">
+                    <a href="#modalSignIn" class="btn btn-big btn-red" data-toggle="modal"
+                       data-target="#modalSignIn">Войти в личный кабинет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalSignInError" aria-hidden="true" id="modalSignInError">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Вход в личный кабинет</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container pt-4 pb-5">
+                    <div class="modal__error">Ошибка</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalRegisterError" aria-hidden="true" id="modalRegisterError">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Регистрация</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container pt-4 pb-5">
+                    <div class="modal__error">Ошибка</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-success" tabindex="-1" role="dialog"
+     aria-labelledby="modalRecoveryPasswordError" aria-hidden="true" id="modalRecoveryPasswordError">
+    <div class="modal-dialog modal-medium" role="document">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__container">
+                    <div class="text-center modal__header--title">
+                        <div class="h2">Восстановление пароля</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__container pt-4 pb-5">
+                    <div class="modal__error">Ошибка</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bussiness</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__top-menu d-block d-md-none">
+        <div class="container">
+            <div class="header__top-menu--btn" data-open="close">
+                <img src="img/menu.svg" alt="menu icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex header__wrap">
+            <div class="header__logo d-none d-xl-flex">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+
+                <div class="site-name">Портал малого и среднего<br>
+                    предпринимательства<br>
+                    города Севастополя
+                </div>
+
+            </div>
+
+            <div class="w-100">
+                <div class="d-flex header__line">
+                    <div class="header__logo d-flex d-xl-none">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+
+                        <div class="site-name">Портал малого и среднего<br>
+                            предпринимательства<br>
+                            города Севастополя
+                        </div>
+                    </div>
+
+                    <div class="d-flex w-100 justify-content-between header__line--wrap">
+                        <div class="header__address">г. Севастополь, Проспект Октябрьской Революции, 42-Б корпус 6</div>
+                        <div class="header__link">
+                            <a href="tel:+7(8692)22-92-92">+7(8692)22-92-92</a>
+                            <a href="mailto:info@mb92.ru ">info@mb92.ru </a>
+                        </div>
+                        <div class="header__date">Ежедневно, 9:00–18:00</div>
+
+                        <ul class="header__soc">
+                            <li><a href="#" class="instagram"></a></li>
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="vk"></a></li>
+                        </ul>
+
+                        <a href="#modalSignIn" class="header__lk" data-toggle="modal"  data-target="#modalSignIn">Личный кабинет</a>
+                        <a href="#modalSignIn" class="header__lk-min" data-toggle="modal"  data-target="#modalSignIn">
+                            <img src="img/person.svg" alt="lk">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__menu-wrap">
+                    <ul class="header__menu">
+                        <li>
+                            <a href="#">О фонде</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"  role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Поддержка МСП</a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item active" href="#">Коронавирус:
+                                    меры поддержки бизнеса</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Неактивный пункт</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item active" href="#">Коронавирус:
+                                    меры поддержки бизнеса</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Неактивный пункт</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Центр Мой бизнес</a>
+                        </li>
+                        <li>
+                            <a href="#">Типовые кейсы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="modal-content authorization-wrap">
+        <div class="modal__header">
+            <div class="modal__container">
+                <div class="d-flex modal__header--title">
+                    <div class="h2">Регистрация</div>
+                    <div class="d-flex modal__header--acc">У меня уже есть аккаунт —
+                        <a href="#modalSignIn" data-toggle="modal" data-target="#modalSignIn">войти</a>
+                    </div>
+                </div>
+
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                       aria-controls="nav-home" aria-selected="true">Физ.лицо</a>
+                    <a class="" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                       aria-controls="nav-profile" aria-selected="false">ИП/ Юр.лицо</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                 aria-labelledby="nav-home-tab">
+                <form class="needs-validation" name="form">
+                    <div class="modal__body">
+                        <div class="modal__container">
+
+                            <div class="d-flex modal__form--row">
+                                <div class="modal__form--col">
+                                    <div class="form-group">
+                                        <label for="firstName">Фамилия*</label>
+                                        <input type="text" class="form-control onlyText" id="firstName"
+                                               name="firstName" placeholder=" "
+                                               required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="secondName">Имя*</label>
+                                        <input type="text" class="form-control onlyText" id="secondName" name="secondName" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="fatherName">Отчество</label>
+                                        <input type="text" class="form-control notrequired onlyText" name="fatherName"
+                                               placeholder=" " id="fatherName">
+                                    </div>
+                                </div>
+
+                                <div class="modal__form--col">
+                                    <div class="form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone">Телефон*</label>
+                                        <input type="text" class="form-control floatNumber input-phone"
+                                               id="phone" name="phone" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Пароль*</label>
+                                        <input type="password" class="form-control" name="password" placeholder=" " id="password">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <div class="modal__container">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Нажимая на кнопку, я принимаю условия <a href="#"> соглашения</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-big btn-red">Зарегестрироваться</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <form class="needs-validation" name="">
+                    <div class="modal__body">
+                        <div class="modal__container">
+
+                            <div class="d-flex modal__form--row">
+                                <div class="modal__form--col">
+                                    <div class="form-group">
+                                        <label for="firstName2">Фамилия*</label>
+                                        <input type="text" class="form-control onlyText" id="firstName2" placeholder=" "  required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="secondName2">Имя*</label>
+                                        <input type="text" class="form-control onlyText" id="secondName2" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="fatherName2">Отчество</label>
+                                        <input type="text" class="form-control notrequired onlyText"
+                                               id="fatherName2" placeholder=" ">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="organization">Наименование организации*</label>
+                                        <input type="text" class="form-control" id="organization" placeholder=" " required>
+                                    </div>
+                                </div>
+
+                                <div class="modal__form--col">
+                                    <div class="form-group">
+                                        <label for="email2">Email*</label>
+                                        <input type="email" class="form-control" id="email2" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone2">Телефон*</label>
+                                        <input type="text" class="form-control floatNumber input-phone"
+                                               id="phone2" placeholder=" " required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Пароль*</label>
+                                        <input type="text" class="form-control" id="password2" placeholder=" "
+                                               required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="INN">ИНН организации/ИП*</label>
+                                        <input type="text" class="form-control floatNumber" id="INN" placeholder=" " required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <div class="modal__container">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" required>
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Нажимая на кнопку, я принимаю условия <a href="#">соглашения</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-big btn-red">Зарегестрироваться</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-content authorization-wrap">
+        <div class="modal__header">
+            <div class="modal__container">
+                <div class="d-flex modal__header--title">
+                    <div class="h2">Вход в личный кабинет</div>
+                </div>
+            </div>
+        </div>
+
+        <form class="needs-validation" novalidate>
+            <div class="modal__body">
+                <div class="modal__container">
+                    <div class="form-group">
+                        <label for="login3">E-mail или номер телефона*</label>
+                        <input type="email" class="form-control" id="login3" name="login" placeholder=" "
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password3">Пароль</label>
+                        <input type="password" class="form-control" id="password3" placeholder=" "
+                               name="password" required>
+                    </div>
+
+                    <a href="#" class="link">Забыли пароль?</a>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="modal__container">
+                    <button type="submit" class="btn btn-big btn-red">Войти</button>
+                    <div class="modal__footer--text">Еще нет аккаунта?
+                        <a href="#modalLogIn" data-toggle="modal" data-target="#modalLogIn">Зарегестрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-content authorization-wrap">
+        <div class="modal__header">
+            <div class="modal__container">
+                <div class="text-center modal__header--title">
+                    <div class="h2">Восстановление пароля</div>
+                </div>
+            </div>
+        </div>
+
+        <form class="needs-validation" name="">
+            <div class="modal__body">
+                <div class="modal__container">
+                    <div class="form-group">
+                        <label for="login">Введите ваш E-mail, указанный при регистрации: *</label>
+                        <input type="email" class="form-control" id="login" name="email" placeholder=" " required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__footer">
+                <div class="modal__container">
+                    <button type="submit" class="btn btn-big btn-red">Отправить запрос</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-content authorization-wrap">
+        <div class="modal__header">
+            <div class="modal__container">
+                <div class="text-center modal__header--title">
+                    <div class="h2">Восстановление пароля</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__body">
+            <div class="modal__container pt-4 pb-5">
+                <div class="modal__error">Ошибка</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="d-flex footer__main">
+            <a href="#" class="footer__main--logo">
+                <img src="img/footer-logo.svg" alt="logo">
+            </a>
+
+            <div class="footer__main--title">НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ «СЕВАСТОПОЛЬСКИЙ <br>ФОНД ПОДДЕРЖКИ СУБЪЕКТОВ
+                ПРЕДПРИНИМАТЕЛЬСТВА»
+            </div>
+            <a href="#modalSignIn" class="footer__main--lk" data-toggle="modal" data-target="#modalSignIn">Личный
+                кабинет</a>
+            <a href="#modalSignIn" class="footer__main--lk-min" data-toggle="modal" data-target="#modalSignIn">
+                <img src="img/person.svg" alt="">
+            </a>
+
+            <div class="d-block d-xl-none footer__contact--polit p2"><a class="p2" href="#">Политика
+                конфиденциальности</a>
+                и cookie-файлы
+            </div>
+
+            <ul class="footer__soc">
+                <li><a href="#" class="instagram"></a></li>
+                <li><a href="#" class="facebook"></a></li>
+                <li><a href="#" class="vk"></a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex footer__partners">
+            <div class="footer__partners--text">Партнеры фонда:</div>
+            <div class="d-flex footer__partners--list">
+                <div class="d-flex footer__partners--row">
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof1.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof2.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof3.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof4.png" alt="" class="big-logo">
+                    </a>
+                </div>
+                <div class="d-flex footer__partners--row">
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof5.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof6.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof7.png" alt="" class="big-logo">
+                    </a>
+                    <a href="#" class="footer__partners--item">
+                        <img src="img/logof8.png" alt="" class="big-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="d-flex footer__contact">
+                    <div class="footer__contact--address p2">г. Севастополь, проспект Октябрьской революции, 42-Б корпус
+                        6
+                    </div>
+                    <div class="footer__contact--link">
+                        <a class="p2" href="tel:+7(8692)22-92-92">+7(8692)22-92-92</a>
+                        <a class="p2" href="mailto:info@mb92.ru">info@mb92.ru</a>
+                    </div>
+                    <div class="footer__contact--copy p2">(c) 2020 г. “Мой бизнес”.
+                        Все права защищены
+                    </div>
+                    <div class="footer__contact--polit p2"><a class="p2" href="#">Политика конфиденциальности</a>
+                        и cookie-файлы
+                    </div>
+                    <div class="footer__contact--number">
+                        <p class="p2">ОГРН 1149204030480,</p>
+                        <p class="p2">ИНН: 9204014921,</p>
+                        <p class="p2">КПП: 920401001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
